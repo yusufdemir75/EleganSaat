@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Duyuru Ekleme Formu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Material Design Iconic Font-V2.2.0 -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font Awesome Stars-->
+    <link rel="stylesheet" href="css/fontawesome-stars.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Bootstrap V4.1.3 Fremwork CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="css/helper.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Modernizr js -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- jQuery-V1.12.4 -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/vendor/popper.min.js"></script>
+    <!-- Bootstrap V4.1.3 Fremwork js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Ajax Mail js -->
+    <script src="js/ajax-mail.js"></script>
+    <!-- Meanmenu js -->
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <!-- Wow.min js -->
+    <script src="js/wow.min.js"></script>
+    <!-- Slick Carousel js -->
+    <script src="js/slick.min.js"></script>
+    <!-- Owl Carousel-2 js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific popup js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Imagesloaded js -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- Mixitup js -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- Countdown -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- Counterup -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- Barrating -->
+    <script src="js/jquery.barrating.min.js"></script>
+    <!-- Jquery-ui -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Venobox -->
+    <script src="js/venobox.min.js"></script>
+    <!-- Nice Select js -->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- ScrollUp js -->
+    <script src="js/scrollUp.min.js"></script>
+    <!-- Main/Activator js -->
+    <script src="js/main.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F8F0E5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-color: #EADBC8; 
+            padding-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #DFA878;
+            margin-top: 20px;
+        }
+
+        form {
+            background: linear-gradient(to right, #DAC0A3, #EADBC8);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background 0.5s ease;
+            width: 50%;
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+
+        label {
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        textarea {
+            color: #000;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            transition: border-color 0.5s ease;
+        }
+
+        input[type="file"] {
+            margin: 10px;
+            display: none;
+        }
+
+        .custom-file-upload {
+            min-width: 180px;
+            margin: 5px;
+            border: 1px solid #F8F0E5;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            background: linear-gradient(to right, #DAC0A3, #EADBC8);
+            color: #fff;
+            border-radius: 4px;
+            transition: background 0.5s ease;
+        }
+
+        .custom-file-upload:hover {
+            background: linear-gradient(to right, #DAC0A3, #EADBC8);
+        }
+
+        input[type="submit"] {
+            margin: 5px;
+            background: linear-gradient(to right, #BA704F, #DFA878);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(to right, #BA704F, #DFA878);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bottom header-sticky d-none d-lg-block d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Begin Header Bottom Menu Area -->
+                        <div class="hb-menu">
+                            <nav>
+                                <ul>
+                                    <li class="megamenu-holder"><a href="admin-duyuru-ekle.html">Duyuru Ekle</a></li>
+                                    <li class="megamenu-holder"><a href="admin-urun-ekle.html">Ürün Ekle</a></li>
+                                    <li class="megamenu-holder"><a href="istatistik.html">İstatistikler</a></li>
+                                    <li class="megamenu-holder"><a href="index.html">Anasayfa</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Bottom Menu Area End Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h2>Duyuru Ekleme Formu</h2>
+
+    <form action="/duyuru-ekle" method="post" enctype="multipart/form-data">
+        <label for="announcementTitle">Başlık:</label>
+        <input type="text" id="announcementTitle" name="announcementTitle" required>
+
+        <label for="announcementContent">İçerik:</label><br>
+        <textarea id="announcementContent" name="announcementContent" rows="4" cols="50" required></textarea><br>
+
+        <input type="file" id="pdfDocument" name="pdfDocument" accept=".pdf" style="display:none;" onclick="document.getElementById('pdfDocument').click()" onchange="displayFileName('pdfDocument', 'pdfFileInfo')">
+        <label for="pdfDocument" class="custom-file-upload">PDF Belgesi Seç</label>
+        <span class="file-info" id="pdfFileInfo"></span><br>
+
+        <input type="file" id="wordDocument" name="wordDocument" accept=".doc, .docx" style="display:none;" onclick="document.getElementById('wordDocument').click()" onchange="displayFileName('wordDocument', 'wordFileInfo')">
+        <label for="wordDocument" class="custom-file-upload">Word Belgesi Seç</label>
+        <span class="file-info" id="wordFileInfo"></span><br>
+
+        <input type="file" id="productImage" name="productImage" accept="image/*" style="display:none;" onclick="document.getElementById('productImage').click()" onchange="displayFileName('productImage', 'imageFileInfo')">
+        <label for="productImage" class="custom-file-upload">Duyuru Görseli Seç</label>
+        <span class="file-info" id="imageFileInfo"></span><br>
+
+        <input type="submit" value="Duyuruyu Ekle">
+    </form>
+
+    <script>
+        function displayFileName(inputId, fileInfoId) {
+            var fileName = document.getElementById(inputId).value.split("\\").pop();
+            document.getElementById(fileInfoId).innerText = fileName;
+        }
+    </script>
+</body>
+</html>

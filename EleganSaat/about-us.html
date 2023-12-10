@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <style>
+    #blgttl {
+      background-color: #f8f0e5;
+    }
+  </style>
+  <!-- about-us32:04-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      About Us || limupa - Digital Products Store eCommerce Bootstrap 4 Template
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- Material Design Iconic Font-V2.2.0 -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Font Awesome Stars-->
+    <link rel="stylesheet" href="css/fontawesome-stars.css" />
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="css/venobox.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Bootstrap V4.1.3 Fremwork CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="css/helper.css" />
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Modernizr js -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+     google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawPieChart);
+    google.charts.setOnLoadCallback(drawColumnChart);
+    google.charts.setOnLoadCallback(drawDonutChart);
+
+    function drawPieChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Ürün', 'Miktar'],
+        ['Saatler', 20],
+        ['Kolyeler', 15],
+        ['Yüzükler', 10],
+        ['Bileklikler', 5]
+      ]);
+
+      var options = {
+        title: 'Ürün Dağılımı',
+        is3D: true,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      chart.draw(data, options);
+    }
+
+    function drawColumnChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Ay', 'Satış Miktarı'],
+        ['Temmuz', 600],
+        ['Ağustos', 620],
+        ['Eylül', 580],
+        ['Ekim', 530],
+        ['Kasım', 500],
+        ['Aralık', 580]
+      ]);
+
+      var options = {
+        title: 'Son 6 Ayın Satış Miktarı',
+        hAxis: {title: 'Ay', titleTextStyle: {color: '#333'}},
+        vAxis: {minValue: 0},
+        legend: 'none'
+      };
+
+      var chart = new google.visualization.ColumnChart(document.getElementById('columnchart_values'));
+      chart.draw(data, options);
+    }
+
+    function drawDonutChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Şehir', 'Yüzde'],
+        ['İstanbul', 30],
+        ['Ankara', 20],
+        ['İzmir', 15],
+        ['Bursa', 10],
+        ['Antalya', 10],
+        ['Diğer', 15]
+      ]);
+
+      var options = {
+        title: 'Ürün Gönderilen Şehirlerin Yüzdesi',
+        pieHole: 0.4, // Çemberin içindeki boşluğun oranı (0 ile 1 arasında)
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+      chart.draw(data, options);
+    }
+  </script>
+  <style>
+    .chart-container {
+        padding: 50px;
+        background-color:#f8f0e5 ;
+        margin-bottom: 20px;
+      width: 33.33%;
+      float: left;
+      box-sizing: border-box;
+    }
+  </style>
+  </head>
+  <body id="blgttl">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <!-- Begin Body Wrapper -->
+    <div class="body-wrapper">
+      <!-- Begin Header Area -->
+      <header>
+                
+        <!-- Header Top Area End Here -->
+        <!-- Begin Header Middle Area -->
+        <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
+            <div class="container">
+                <div class="row">
+                    <!-- Begin Header Logo Area -->
+                    <div class="col-lg-3">
+                        <div class="logo pb-sm-30 pb-xs-30">
+                            <a href="index.html">
+                                <img src="images/new-images/4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Header Logo Area End Here -->
+                    <!-- Begin Header Middle Right Area -->
+                    <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                        <!-- Begin Header Middle Searchbox Area -->
+                        <form  action="#" class="hm-searchbox">
+                            
+                            <input type="text" placeholder="Anahtar kelimeleri giriniz...">
+                            <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        <!-- Header Middle Searchbox Area End Here -->
+                        <!-- Begin Header Middle Right Area -->
+                        <div style="width: 400px; ;" class="header-middle-right">
+                            <ul  class="hm-menu">
+                                <!-- Begin Header Middle Wishlist Area -->
+                                
+                                <li class="hm-wishlist1">
+                                    <a href="wishlist.html">
+                                        <span class="cart-item-count wishlist-item-count">3</span>
+                                        <i class="fa fa-heart-o"></i>
+                                    </a>
+                                </li>
+                                <li class="hm-wishlist2">
+                                    <a href="v.html">
+                                        <span class="cart-item-count wishlist-item-count"></span>
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="hm-wishlist2">
+                                    <a href="adminloginpage.html">
+                                        <span class="cart-item-count wishlist-item-count"></span>
+                                        <i class="fa fa-user-secret"></i>
+                                    </a>
+                                </li>
+                                <!-- Header Middle Wishlist Area End Here -->
+                                <!-- Begin Header Mini Cart Area -->
+                                <li class="hm-minicart">
+                                    <div class="hm-minicart-trigger">
+                                        <span class="item-icon"></span>
+                                        <span class="item-text">4548 TL
+                                            <span class="cart-item-count">3</span>
+                                        </span>
+                                    </div>
+                                    <span></span>
+                                    <div class="minicart">
+                                        <ul class="minicart-product-list">
+                                            <li>
+                                                <a href="single-product.html" class="minicart-product-image">
+                                                    <img src="images/new-images/kucukresim1.png" alt="cart products">
+                                                </a>
+                                                <div class="minicart-product-details">
+                                                    <h6><a href="single-product.html">Puma
+                                                        P6058 Erkek Kol Saati</a></h6>
+                                                    <span>699₺ x 1</span>
+                                                </div>
+                                                <button class="close" title="Remove">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <a href="single-product.html" class="minicart-product-image">
+                                                    <img src="images/new-images/kucukresim2.png" alt="cart products">
+                                                </a>
+                                                <div class="minicart-product-details">
+                                                    <h6><a href="single-product.html">Parigi
+                                                         Kolye Ve Bileklik Seti</a></h6>
+                                                    <span>549₺ x 1</span>
+                                                </div>
+                                                <button class="close" title="Remove">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <a href="single-product.html" class="minicart-product-image">
+                                                    <img src="images/new-images/kucukresim3.png" alt="cart products">
+                                                </a>
+                                                <div class="minicart-product-details">
+                                                    <h6><a href="single-product.html">Lacoste
+                                                         Erkek Yüzük
+                                                        </a></h6>
+                                                    <span>3300₺ x 1</span>
+                                                </div>
+                                                <button class="close" title="Remove">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div class="minicart-button">
+                                             
+                                            <a href="cart.html" class="li-button li-button-fullwidth">
+                                                <span>Ödeme</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Header Mini Cart Area End Here -->
+                            </ul>
+                        </div>
+                        <!-- Header Middle Right Area End Here -->
+                    </div>
+                    <!-- Header Middle Right Area End Here -->
+                </div>
+            </div>
+        </div>
+        <!-- Header Middle Area End Here -->
+        <!-- Begin Header Bottom Area -->
+        <div class="header-bottom header-sticky d-none d-lg-block d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Begin Header Bottom Menu Area -->
+                        <div class="hb-menu">
+                            <nav>
+                                <ul>
+                                    <li class="megamenu-holder"><a href="index.html">Anasayfa</a>
+                                        
+                                    </li>
+                                    <li  class="megamenu-holder"><a href="#">Alışveriş</a>
+                                        <ul class="megamenu hb-megamenu">
+                                            
+                                            <li><a href="#">Size Özel</a>
+                                                <ul>
+                                                    <li>
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/bestsellerslogo.png" alt="">
+                                                            <a style="margin-left: 10px;" href="cok_satılanlar.html">Çok Satılanlar</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/customlogo.png" alt="">
+                                                            <a style="margin-left: 10px;" href="enbegenilenler.html">Özel Kreasyonlar</a>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    
+                                    <li  class="megamenu-holder"><a href="#">Duyurular</a>
+                                        <ul class="megamenu hb-megamenu">
+                                            
+                                            <li><a href="#">Kampanyalar</a>
+                                                <ul>
+                                                    <li>
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/dyrlogo.png" alt="">
+                                                            <a style="margin-left: 10px;" href="z.html">Duyurular</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/frstlogo.png" alt="">
+                                                            <a style="margin-left: 10px;" href="firsatlar.html">Fırsatlar</a>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li  class="megamenu-holder"><a href="#">Ürünler</a>
+                                        <ul class="megamenu hb-megamenu">
+                                            
+                                            <li><a href="#">Ürünler</a>
+                                                <ul>
+                                                    <li>
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/saatlogo1.png" alt="">
+                                                            <a style="margin-left: 10px;" href="urun-saatler.html">Saatler</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/kolyelogo1.png" alt="">
+                                                            <a style="margin-left: 10px;" href="urun-kolyeler.html">Kolyeler</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/bilekliklogo1.png" alt="">
+                                                            <a style="margin-left: 10px;" href="urun-bileklikler.html">Bileklikler</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/yüzüklogo1.png" alt="">
+                                                            <a style="margin-left: 10px;" href="urun-yuzukler.html">Yüzükler</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li   class="megamenu-holder"><a href="#">HAKKIMIZDA</a>
+                                        <ul class="megamenu hb-megamenu">
+                                            
+                                            <li><a href="#">ŞİRKET</a>
+                                                <ul>
+                                                    <li>
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/Aboutuslogo.png" alt="">
+                                                            <a style="margin-left: 10px;" href="about-us.html">Hakkımızda</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/misyonvizyonlogo.png" alt="">
+                                                            <a style="margin-left: 10px;" href="misyon-vizyon.html">Misyon ve Vizyonumuz</a>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                   
+                                    <li  class="megamenu-holder"><a href="#">Birimlerimiz</a>
+                                        <ul class="megamenu hb-megamenu">
+                                            
+                                            <li><a href="#">BİRİMLERİMİZ</a>
+                                                <ul>
+                                                    <li>
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/brm1.png" alt="">
+                                                            <a style="margin-left: 10px;" href="contact.html">İzmit Merkez</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/brm2.png" alt="">
+                                                            <a style="margin-left: 10px;" href="contact.html">Umuttepe</a>
+                                                        </div>
+                                                    </li>
+                                                    <li style="margin-top: 10px;">
+                                                        <div style="display: flex; align-items: center;">
+                                                            <img style="width: 50px; height: 50px;" src="images/new-images/brm2.png" alt="">
+                                                            <a style="margin-left: 10px;" href="contact.html">Derince</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li ><a href="contact.html">Bağlantılarımız</a></li>
+                                    
+                                    
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Bottom Menu Area End Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Bottom Area End Here -->
+        <!-- Begin Mobile Menu Area -->
+        <div class="mobile-menu-area d-lg-none d-xl-none col-12">
+            <div class="container"> 
+                <div class="row">
+                    <div class="mobile-menu">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Area End Here -->
+    </header>
+      <!-- Header Area End Here -->
+      <!-- Begin Li's Breadcrumb Area -->
+      <div class="breadcrumb-area">
+        <div class="container">
+          <div class="breadcrumb-content">
+            <ul>
+              <li><a href="index.html">ANASAYFA</a></li>
+              <li class="active">HAKKIMIZDA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Li's Breadcrumb Area End Here -->
+      <!-- about wrapper start -->
+      <div class="about-us-wrapper pt-60 pb-40">
+        <div class="container">
+          <div class="row">
+            <!-- About Text Start -->
+            <div class="col-lg-6 order-last order-lg-first">
+              <div class="about-text-wrap">
+                <p>
+                  <span
+                    style="
+                      font-size: 28px;
+                      font-weight: bold;
+                      color: #8c715d;
+
+                      padding-bottom: 10px;
+                      margin-bottom: 20px;
+                    "
+                    >Hoş Geldiniz!</span
+                  >
+                  <br /><br />
+
+                  EleganSaat olarak, zamanın ve zarafetin olağanüstü bir
+                  birleşimini müşterilerimize sunmaktan gurur duyuyoruz. Saatler
+                  ve takılar dünyasında markamız, estetik tasarım, kaliteli
+                  işçilik ve benzersiz detaylarda öne çıkan özel parçalarıyla
+                  tanınmaktadır.
+                </p>
+                <p>
+                  <span
+                    style="
+                      font-size: 28px;
+                      font-weight: bold;
+                      color: #8c715d;
+
+                      padding-bottom: 10px;
+                      margin-bottom: 20px;
+                    "
+                    >Kalite ve Ustalık</span
+                  >
+                  <br /><br />
+
+                  Her bir EleganSaat ürünü, en kaliteli malzemelerin seçimi ve
+                  uzman el işçiliği ile titizlikle üretilir. Saat
+                  koleksiyonumuz, hassas mekanizmalar ve şık tasarımlarla günün
+                  her anında şıklığı temsil eder. Takılarımız ise özgün detaylar
+                  ve özenle seçilen değerli taşlar ile öne çıkar, kişisel
+                  tarzınızı ve benzersizliğinizi vurgular.
+                </p>
+                <p>
+                  <span
+                    style="
+                      font-size: 28px;
+                      font-weight: bold;
+                      color: #8c715d;
+
+                      padding-bottom: 10px;
+                      margin-bottom: 20px;
+                    "
+                    >Geniş Koleksiyon ve Çeşitlilik</span
+                  >
+                  <br /><br />
+
+                  EleganSaat olarak, her zevke ve tarza uygun geniş bir ürün
+                  yelpazesi sunuyoruz. Zarif ve klasik tasarımlardan modern ve
+                  iddialı modellere kadar çeşitli stillerde ürünlerimiz
+                  bulunmaktadır. Bu çeşitlilik, müşterilerimize kendilerini
+                  ifade etme özgürlüğü sağlamak için tasarlanmıştır.
+                </p>
+                <p>
+                  <span
+                    style="
+                      font-size: 28px;
+                      font-weight: bold;
+                      color: #8c715d;
+
+                      padding-bottom: 10px;
+                      margin-bottom: 20px;
+                    "
+                    >Müşteri Odaklı Yaklaşım</span
+                  >
+                  <br /><br />
+
+                  Müşteri memnuniyeti, EleganSaat'in temel prensiplerinden
+                  biridir. Her bir müşterimizi özel ve değerli hissettirmeyi
+                  amaçlıyoruz. Uzman ve samimi ekibimiz, sizlere en iyi
+                  alışveriş deneyimini sunabilmek için çalışmaktadır.
+                  Sorularınız veya talepleriniz için her zaman yanınızdayız.
+                </p>
+              </div>
+            </div>
+            <!-- About Text End -->
+            <!-- About Image Start -->
+            <div class="col-lg-5 col-md-10">
+              
+                <div >
+                  
+                  <img
+                  style="margin-left: 200px; border-radius: 20px; margin-top: 50px;"
+
+                    src="images/new-images/aboutus1.png"
+                    alt="About Us"
+                  />
+                  <img
+                  style="margin-left: 200px; border-radius: 20px; margin-top: 50px;"
+                    src="images/new-images/aboutus.png"
+                    alt="About Us"
+                  />
+                </div>
+                
+              
+              
+            </div>
+            <!-- About Image End -->
+          </div>
+        </div>
+      </div>
+      <!-- about wrapper end -->
+      <!-- Begin Counterup Area -->
+      <div class="counterup-area">
+        <div class="chart-container">
+            <div id="piechart_3d"></div>
+          </div>
+          <div class="chart-container">
+            <div id="columnchart_values"></div>
+          </div>
+          <div class="chart-container">
+            <div id="donutchart"></div>
+          </div>
+      </div>
+      <!-- Counterup Area End Here -->
+      <!-- team area wrapper start -->
+      
+      <!-- team area wrapper end -->
+      <!-- Begin Footer Area -->
+      <div class="footer">
+        <!-- Begin Footer Static Top Area -->
+        <div class="footer-static-top">
+            <div class="container">
+                <!-- Begin Footer Shipping Area -->
+                <div class="footer-shipping pt-60 pb-55 pb-xs-25">
+                    <div class="row">
+                        <!-- Begin Li's Shipping Inner Box Area -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
+                            <div class="li-shipping-inner-box">
+                                <div class="shipping-icon">
+                                    <img src="images/shipping-icon/1.png" alt="Shipping Icon">
+                                </div>
+                                <div class="shipping-text">
+                                    <h2>Ücretsiz Kargo</h2>
+                                    <p>Ayrıca Ücretsiz iade.Teslimat Tarihleri için ödeme sayfasına bakınız.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Shipping Inner Box Area End Here -->
+                        <!-- Begin Li's Shipping Inner Box Area -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
+                            <div class="li-shipping-inner-box">
+                                <div class="shipping-icon">
+                                    <img src="images/shipping-icon/2.png" alt="Shipping Icon">
+                                </div>
+                                <div class="shipping-text">
+                                    <h2>Güvenli Ödeme</h2>
+                                    <p>Dünyanın en popüler ve güvenli ödeme yöntemleriyle ödeme yapın.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Shipping Inner Box Area End Here -->
+                        <!-- Begin Li's Shipping Inner Box Area -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
+                            <div class="li-shipping-inner-box">
+                                <div class="shipping-icon">
+                                    <img src="images/shipping-icon/3.png" alt="Shipping Icon">
+                                </div>
+                                <div class="shipping-text">
+                                    <h2>Güvenle Ödeme Yapın</h2>
+                                    <p>Alıcı Korumamız, tıklamadan teslimata kadar satın alma işleminizi kapsar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Shipping Inner Box Area End Here -->
+                        <!-- Begin Li's Shipping Inner Box Area -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
+                            <div class="li-shipping-inner-box">
+                                <div class="shipping-icon">
+                                    <img src="images/shipping-icon/4.png" alt="Shipping Icon">
+                                </div>
+                                <div class="shipping-text">
+                                    <h2>24/7 Hizmet Merkezi</h2>
+                                    <p>Bir sorunuz mu var? Bir Uzmanı arayın veya çevrimiçi sohbet edin.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Li's Shipping Inner Box Area End Here -->
+                    </div>
+                </div>
+                <!-- Footer Shipping Area End Here -->
+            </div>
+        </div>
+        <!-- Footer Static Top Area End Here -->
+        <!-- Begin Footer Static Middle Area -->
+        <div class="footer-static-middle">
+            <div class="container">
+                <div class="footer-logo-wrap pt-50 pb-35">
+                    <div class="row">
+                        <!-- Begin Footer Logo Area -->
+                        <div class="col-lg-13 col-md-6">
+                            <div class="footer-logo">
+                                <img src="images/new-images/4.png" alt="Footer Logo">
+                                <p class="info">
+                                    " Saat ve takı tutkunları için EleganSaat, zamansız şıklığı ve özgün tarzı bir araya getiriyor. Seçkin koleksiyonumuz, her anınıza değer katan benzersiz tasarımlar sunuyor. Stilinizi yansıtmak ve her anı özel kılmak için EleganSaat ile buluşun. Zamanı stilinize ayarlayın! "
+                                </p>
+                            </div>
+                            <ul class="des">
+                                <li>
+                                    <span>Adresimiz: </span>
+                                    Cumhuriyet
+Korniş Cd No:7
+41200 İzmit/Kocaeli
+Türkiye
+                                </li>
+                                <li>
+                                    <span>Phone: </span>
+                                    <a href="#">(+90) 533 917 87 39</a>
+                                </li>
+                                <li>
+                                    <span>Email: </span>
+                                    <a href="mailto://dmrysf0320@gmail.com">dmrysf0320@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Logo Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Ürün</h3>
+                                <ul>
+                                    <li><a href="404.html">Fiyatı Düşen Ürünler</a></li>
+                                    <li><a href="enbegenilenler.html">Beğenilen Ürünler</a></li>
+                                    <li><a href="cok_satılanlar.html">Çok Satılan Ürünler</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-2 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Şirketimiz</h3>
+                                <ul>
+                                    <li><a href="404.html">Teslimat</a></li>
+                                    <li><a href="about-us.html">Hakkımızda</a></li>
+                                    <li><a href="contact.html">Bağlantılarımız</a></li>
+                                    <li><a href="sss.html">S.S.S.</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-13">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Bizi Takip Edin</h3>
+                                <ul class="social-link">
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="google-plus">
+                                        <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank" title="Google Plus">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank" title="Instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Static Middle Area End Here -->
+        <!-- Begin Footer Static Bottom Area -->
+        <div class="footer-static-bottom pt-55 pb-55">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Begin Footer Links Area -->
+                         
+                        <!-- Footer Links Area End Here -->
+                        <!-- Begin Footer Payment Area -->
+                        <div class="copyright text-center">
+                            <a href="#">
+                                <img src="images/payment/1.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Footer Payment Area End Here -->
+                        <!-- Begin Copyright Area -->
+                        
+                        <!-- Copyright Area End Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Static Bottom Area End Here -->
+    </div>
+    <!-- Footer Area End Here -->
+    <!-- Begin Quick View | Modal Area -->
+    <div class="modal fade modal-wrapper" id="exampleModalCenter" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-inner-area row">
+                        <div class="col-lg-5 col-md-6 col-sm-6">
+                           <!-- Product Details Left -->
+                            <div class="product-details-left">
+                                <div class="product-details-images slider-navigation-1">
+                                    <div class="lg-image">
+                                        <img src="images/saatler/saat-1-1.png" alt="product image">
+                                    </div>
+                                    <div class="lg-image">
+                                        <img src="images/saatler/saat-1-2.png" alt="product image">
+                                    </div>
+                                    <div class="lg-image">
+                                        <img src="images/saatler/saat-1-3.png" alt="product image">
+                                    </div>
+                                    <div class="lg-image">
+                                        <img src="images/saatler/saat-1-4.png" alt="product image">
+                                    </div>
+                                    <div class="lg-image">
+                                        <img src="images/saatler/saat-1-1.png" alt="product image">
+                                    </div>
+                                    <div class="lg-image">
+                                        <img src="images/saatler/saat-1-3.png" alt="product image">
+                                    </div>
+                                    
+                                </div>
+                                <div class="product-details-thumbs slider-thumbs-1">                                        
+                                    <div class="sm-image"><img src="images/saatler/saat-1-1-small.png" alt="product image thumb"></div>
+                                    <div class="sm-image"><img src="images/saatler/saat-1-2-small.png" alt="product image thumb"></div>
+                                    <div class="sm-image"><img src="images/saatler/saat-1-3-small.png" alt="product image thumb"></div>
+                                    <div class="sm-image"><img src="images/saatler/saat-1-4-small.png" alt="product image thumb"></div>
+                                    <div class="sm-image"><img src="images/saatler/saat-1-1.png" alt="product image thumb"></div>
+                                    <div class="sm-image"><img src="images/saatler/saat-1-3-small.png" alt="product image thumb"></div>
+                                </div>
+                            </div>
+                            <!--// Product Details Left -->
+                        </div>
+
+                        <div class="col-lg-7 col-md-6 col-sm-6">
+                            <div class="product-details-view-content pt-60">
+                                <div class="product-info">
+                                    <h2 style="color: black;">Diesel
+                                        DZ1437 Kol Saati</h2>
+                                    <div class="rating-box pt-20">
+                                        <ul class="rating rating-with-review-item">
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li><i class="fa fa-star-o"></i></li>
+                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                            <li class="review-item"><a href="#">3.7  </a></li>
+                                            <li class="review-item"><a href="#">Yorumlar (8)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-box pt-20">
+                                        <span class="new-price new-price-2">1099₺</span>
+                                    </div>
+                                    <div class="product-desc">
+                                        <p>
+                                            <span>Çelik / Quartz Mekanizma / 44 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik
+                                            </span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="single-add-to-cart">
+                                        <form action="#" class="cart-quantity">
+                                            
+                                            <button class="add-to-cart" type="submit">Add to cart</button>
+                                        </form>
+                                    </div>
+                                    <div class="product-additional-info pt-25">
+                                        <a class="wishlist-btn" href="wishlist.html"><i class="fa fa-heart-o"></i>Add to wishlist</a>
+                                        <div class="product-social-sharing pt-25">
+                                            <ul>
+                                                <li class="facebook"><a href="https://www.facebook.com/discover"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                                <li class="twitter"><a href="https://www.twitter.com/discover"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                                <li class="google-plus"><a href="https://www.plus.google.com/discover"><i class="fa fa-google-plus"></i>Google +</a></li>
+                                                <li class="instagram"><a href="https://www.instagram.com/discover"><i class="fa fa-instagram"></i>Instagram</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- Quick View | Modal Area End Here -->
+</div>
+<!-- Body Wrapper End Here -->
+<!-- jQuery-V1.12.4 -->
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/vendor/popper.min.js"></script>
+<!-- Bootstrap V4.1.3 Fremwork js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Ajax Mail js -->
+<script src="js/ajax-mail.js"></script>
+<!-- Meanmenu js -->
+<script src="js/jquery.meanmenu.min.js"></script>
+<!-- Wow.min js -->
+<script src="js/wow.min.js"></script>
+<!-- Slick Carousel js -->
+<script src="js/slick.min.js"></script>
+<!-- Owl Carousel-2 js -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Magnific popup js -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Isotope js -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- Imagesloaded js -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<!-- Mixitup js -->
+<script src="js/jquery.mixitup.min.js"></script>
+<!-- Countdown -->
+<script src="js/jquery.countdown.min.js"></script>
+<!-- Counterup -->
+<script src="js/jquery.counterup.min.js"></script>
+<!-- Waypoints -->
+<script src="js/waypoints.min.js"></script>
+<!-- Barrating -->
+<script src="js/jquery.barrating.min.js"></script>
+<!-- Jquery-ui -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Venobox -->
+<script src="js/venobox.min.js"></script>
+<!-- Nice Select js -->
+<script src="js/jquery.nice-select.min.js"></script>
+<!-- ScrollUp js -->
+<script src="js/scrollUp.min.js"></script>
+<!-- Main/Activator js -->
+<script src="js/main.js"></script>
+  </body>
+
+  <!-- about-us32:14-->
+</html>
